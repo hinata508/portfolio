@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* 共通部分
+---------------------*/
+
+
+body{
+	background-color: #E1E1E1;
+	font-size: 90%;
+	margin: 0;	 
+}
+
+#ii img{
+	max-width: 100%;
+	width: 300px;
+	height: 400px;
+}
+
+
+.nav__wrapper{
+	display: flex;
+	text-transform: uppercase;
+	list-style: none;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+	border-bottom: none;
+	
+}
+.nav__wrapper li a{
+	text-decoration: none;
+	color: black;
+}
+.nav__item{
+	margin: 0 auto;
+}
+
+.gray{
+	background-color:#e1e1e1;
+}
+.white{
+	background-color: #fff;
+}
+#Profile{
+	display: flex;	
+}
+#ii{
+	margin-left: 180px;
+}
+#text{
+	margin-left: 50px;
+	margin-right: 100px;
+	width: 700px;
+	margin-top: 100px;
+	text-align: center;
+}
+#text2{
+	margin-left: 550px;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+#text3{
+	font-size: 60px;
+	text-align: center;
+	 font-family: "Monoton", sans-serif;
+ 	 font-weight: 400;
+  	font-style: normal;
+}
+.title{
+  font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+	margin-top: 30px;
+}
+#Works .white{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.profilebox{
+	display: flex;
+	justify-content: space-between;
+}
+.workss{
+	display: flex;
+	justify-content:5%;
+	margin-left: 250px;
+	margin-bottom: 50px;
+	font-family: "M PLUS Rounded 1c", sans-serif;
+   font-weight: 400;
+   font-style: normal;	
+	
+}
+#title{
+   font-family: "Asset", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 30px;
+	padding-top: 120px;
+
+}
+.wo{
+	width: 400px;
+	
+}
+.workss img{
+
+	height: 200px;
+}
+
+.sakuhin2{
+	margin-right: 50px;
+}
+
+.sakuhinn img{
+	margin-top: 100px;
+	margin-left: 100px;
+	height: 600px;
+}
+
+.sakuhinn {
+	text-align: center;
+	
+}
+.sakuhinn p:last-child{
+	padding-bottom:100px;
+}
+.inner{
+	margin: 100px;
+}
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 100%;
+  }
+
+  .nav__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__item {
+    margin: 10px 0;
+  }
+
+  #Profile, .profilebox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #ii {
+    margin-left: 0;
+  }
+
+  #ii img {
+    width: 90%;
+    height: auto;
+  }
+
+  #text {
+    margin: 20px;
+    width: auto;
+  }
+
+  #text2 {
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .inner {
+    margin: 20px;
+  }
+
+  .workss {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .wo {
+    width: 90%;
+  }
+
+  .wo img {
+    width: 100%;
+    height: auto;
+  }
+
+  #text3 {
+    font-size: 32px;
+  }
+
+  .sakuhin2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
